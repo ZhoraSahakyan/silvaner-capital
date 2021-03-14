@@ -1,37 +1,25 @@
 import React from 'react';
 import {
-    Container,
-    NavLogo,
-    FormWrapper,
-    FormContent,
-    FormHeader,
-    Form,
-    FormFieldContainer,
-    FormInput,
-    FormTextarea,
-    FormButton,
     ContactInfo,
     ContactInfoItem,
-    ContactInfoItemIcon
-} from './SigninElements';
+    ContactInfoItemIcon,
+    Container,
+    Form,
+    FormButton,
+    FormContent,
+    FormFieldContainer,
+    FormHeader,
+    FormInput,
+    FormTextarea,
+    FormWrapper
+} from './ContactElements';
 import {IconContext} from 'react-icons/lib';
-import {
-    FaPhoneAlt,
-    FaRegEnvelope,
-    FaMapMarkerAlt,
-    FaLinkedin
-} from 'react-icons/fa';
+import {FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope} from 'react-icons/fa';
 
-import Logo from '../../assets/images/Logo.png';
-
-const SignIn = () => {
+const Contact = () => {
     return (
         <>
-            <Container>
-                <NavLogo to='/'>
-                    <img src={Logo} alt="Silvaner Capital logo"/>
-                </NavLogo>
-
+            <Container id="contact-us">
                 <FormWrapper>
                     <FormContent>
                         <FormHeader>
@@ -117,4 +105,4 @@ const SignIn = () => {
     );
 };
 
-export default SignIn;
+export default Contact;

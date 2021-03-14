@@ -17,7 +17,6 @@ export const ServicesWrapper = styled.div`
   margin: 0 auto;
   padding: 15px 50px;
   display: grid;
-  background: #000;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;

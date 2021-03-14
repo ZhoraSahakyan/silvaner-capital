@@ -16,7 +16,6 @@ export const ServicesContainer = styled.div`
 export const ServicesWrapper = styled.div`
   max-width: 1000px;
   display: grid;
-  background: #000;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;

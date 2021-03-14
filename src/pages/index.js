@@ -7,6 +7,7 @@ import ProcessSection from '../components/ProcessSection';
 import Services from '../components/Services';
 import InvestmentFunction from '../components/InvestmentFocus';
 import AboutSection from "../components/AboutSection";
+import Contact from "../components/Contact";
 
 
 function Home() {
@@ -21,9 +22,10 @@ function Home() {
             <Navbar toggle={toggle}/>
             <HeroSection/>
             <Services/>
-            <ProcessSection />
-            <InvestmentFunction/>
             <AboutSection/>
+            <InvestmentFunction/>
+            <ProcessSection />
+            <Contact/>
             <Footer/>
         </>
     );

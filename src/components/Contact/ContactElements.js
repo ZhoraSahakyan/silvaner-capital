@@ -1,37 +1,13 @@
 import styled from 'styled-components';
-import {Link as LinkR} from 'react-router-dom';
 import wave from '../../assets/images/Graphics/wave-4.svg';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: .7fr 2.5fr .5fr;
   align-items: start;
   padding: 10px 24px;
-  grid-gap: 10px;
   background-image: url(${wave});
   background-repeat: no-repeat;
   background-position: bottom;
-  
-  
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-export const NavLogo = styled(LinkR)`
-  color: blue;
-  justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  
-  img {
-    width: 200px
-  }
 `;
 
 export const FormWrapper = styled.div`

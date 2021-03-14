@@ -98,8 +98,13 @@ const Navbar = ({toggle}) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to='/contact'>
-                                Contact
+                            <NavBtnLink to='contact-us'
+                                        smooth="true"
+                                        duration={500}
+                                        spy="true"
+                                        exact='true'
+                                        offset={-80}>
+                                Contact Us
                             </NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
