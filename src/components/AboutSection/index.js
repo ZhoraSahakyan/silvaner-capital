@@ -1,4 +1,6 @@
 import React from 'react';
+import AboutUs from '../../assets/images/About-Us-1.jpg';
+import AboutUs2 from '../../assets/images/About-Us-2.jpg';
 import {
     AboutContainer,
     AboutTitle,
@@ -24,8 +26,8 @@ function AboutSection() {
 
             <Partner>
                 <PartnerImages>
-                    <img src="https://html5css.ru/css/img_lights.jpg"/>
-                    <img src="https://html5css.ru/css/img_lights.jpg"/>
+                    <img src={AboutUs} alt="about us"/>
+                    <img src={AboutUs2} alt="about us"/>
                 </PartnerImages>
                 <PartnerInfo>
                     <PartnerName>Johannes Hock</PartnerName>

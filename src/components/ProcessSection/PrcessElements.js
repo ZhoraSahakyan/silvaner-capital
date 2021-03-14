@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import wave from '../../assets/images/Graphics/wave-2.svg'
 
 export const ProcessContainer = styled.div`
   min-height: 680px;
@@ -7,6 +8,9 @@ export const ProcessContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  background-image: url(${wave});
+  background-repeat: no-repeat;
+  background-position: bottom;
 `;
 
 export const ProcessTitle = styled.h1`
@@ -45,6 +49,24 @@ export const ProcessCard  = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+`;
+
+export const ProcessCardIcon  = styled.div`
+    position: relative;
+    width: 140px;
+    height: 60px;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(${({ bgUrl }) => bgUrl });
+    
+    
+    img {
+        position: absolute;
+        top: 1px;
+        left: 50px;
+        width: 45px;
+    }
 `;
 
 export const ProcessCardTitle  = styled.p`

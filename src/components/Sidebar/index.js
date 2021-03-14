@@ -64,13 +64,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='contact'
-                                  onClick={toggle}
-                                  smooth="true"
-                                  duration={500}
-                                  spy="true"
-                                  exact='true'
-                                  offset={-80}>
+                    <SidebarRoute to='/contact'>
                         Contact
                     </SidebarRoute>
                 </SideBtnWrap>

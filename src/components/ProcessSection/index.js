@@ -5,9 +5,20 @@ import {
     ProcessSubTitle,
     ProcessWrapper,
     ProcessCard,
+    ProcessCardIcon,
     ProcessCardTitle,
     ProcessCardSubTitle
 } from './PrcessElements';
+import intro from '../../assets/images/Graphics/Introduction.svg';
+import preLoi from '../../assets/images/Graphics/Pre-LOI.svg';
+import Loi from '../../assets/images/Graphics/LOI.svg';
+import Diligence from '../../assets/images/Graphics/Diligence.svg';
+import Close from '../../assets/images/Graphics/Close.svg';
+import arrow from '../../assets/images/Graphics/Arrow.svg';
+import arrow2 from '../../assets/images/Graphics/Arrow-2.svg';
+import arrow3 from '../../assets/images/Graphics/Arrow-3.svg';
+import arrow4 from '../../assets/images/Graphics/Arrow-4.svg';
+import arrow5 from '../../assets/images/Graphics/Arrow-5.svg';
 
 const ProcessSection = () => {
     return (
@@ -21,6 +32,9 @@ const ProcessSection = () => {
                 </ProcessSubTitle>
                 <ProcessWrapper>
                     <ProcessCard>
+                        <ProcessCardIcon bgUrl={arrow}>
+                            <img src={intro} alt="Introduction"/>
+                        </ProcessCardIcon>
                         <ProcessCardTitle>
                             Introduction
                         </ProcessCardTitle>
@@ -29,6 +43,9 @@ const ProcessSection = () => {
                         </ProcessCardSubTitle>
                     </ProcessCard>
                     <ProcessCard>
+                        <ProcessCardIcon bgUrl={arrow2}>
+                            <img src={preLoi} alt="Pre-LOI"/>
+                        </ProcessCardIcon>
                         <ProcessCardTitle>
                             Pre-LOI
                         </ProcessCardTitle>
@@ -37,6 +54,9 @@ const ProcessSection = () => {
                         </ProcessCardSubTitle>
                     </ProcessCard>
                     <ProcessCard>
+                        <ProcessCardIcon bgUrl={arrow3}>
+                            <img src={Loi} alt="LOI"/>
+                        </ProcessCardIcon>
                         <ProcessCardTitle>
                             LOI
                         </ProcessCardTitle>
@@ -45,6 +65,9 @@ const ProcessSection = () => {
                         </ProcessCardSubTitle>
                     </ProcessCard>
                     <ProcessCard>
+                        <ProcessCardIcon bgUrl={arrow4}>
+                            <img src={Diligence} alt="Diligence"/>
+                        </ProcessCardIcon>
                         <ProcessCardTitle>
                             Diligence
                         </ProcessCardTitle>
@@ -53,6 +76,9 @@ const ProcessSection = () => {
                         </ProcessCardSubTitle>
                     </ProcessCard>
                     <ProcessCard>
+                        <ProcessCardIcon bgUrl={arrow5}>
+                            <img src={Close} alt="Close"/>
+                        </ProcessCardIcon>
                         <ProcessCardTitle>
                             Close
                         </ProcessCardTitle>

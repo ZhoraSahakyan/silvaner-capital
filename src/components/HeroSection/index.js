@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import Video from '../../videos/video.mp4';
+import Video from '../../assets/videos/video.mp4';
 import {HeroBg, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg} from './HeroElements';
 
 function HeroSection() {

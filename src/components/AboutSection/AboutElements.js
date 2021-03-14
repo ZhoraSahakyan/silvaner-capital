@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import wave from '../../assets/images/Graphics/wave.svg';
 
 export const AboutContainer = styled.div`
   min-height: 780px;
@@ -7,6 +8,9 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  background-image: url(${wave});
+  background-repeat: no-repeat;
+  background-position: bottom;
 `;
 
 export const AboutTitle = styled.h1`
@@ -24,12 +28,12 @@ export const AboutSubTitle = styled.p`
 `;
 
 export const Partner = styled.div`
-  max-width: 880px;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 15px 15px;
   display: grid;
-  // background: #000;
-  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  border-radius: 30px;
+  grid-template-columns: 2fr 2fr;
   align-items: start;
   grid-gap: 50px;
 
@@ -49,7 +53,7 @@ export const PartnerImages = styled.div`
     justify-content: center;
     
     img {
-        width: 340px;
+        width: 360px;
     }
     
     img:nth-child(1) {

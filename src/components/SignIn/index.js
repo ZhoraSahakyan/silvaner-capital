@@ -22,12 +22,14 @@ import {
     FaLinkedin
 } from 'react-icons/fa';
 
+import Logo from '../../assets/images/Logo.png';
+
 const SignIn = () => {
     return (
         <>
             <Container>
                 <NavLogo to='/'>
-                    Silvaner Capital
+                    <img src={Logo} alt="Silvaner Capital logo"/>
                 </NavLogo>
 
                 <FormWrapper>

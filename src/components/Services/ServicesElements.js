@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import wave1 from '../../assets/images/Graphics/wave-3.svg'
 
 export const ServicesContainer = styled.div`
   min-height: 1000px;
@@ -7,6 +8,9 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(${wave1});
+  background-repeat: no-repeat;
+  background-position: bottom;
 `;
 
 export const ServicesWrapper = styled.div`

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Link as LinkR} from 'react-router-dom';
+import wave from '../../assets/images/Graphics/wave-4.svg';
 
 export const Container = styled.div`
   display: grid;
@@ -7,6 +8,9 @@ export const Container = styled.div`
   align-items: start;
   padding: 10px 24px;
   grid-gap: 10px;
+  background-image: url(${wave});
+  background-repeat: no-repeat;
+  background-position: bottom;
   
   
   @media screen and (max-width: 1200px) {
@@ -24,10 +28,13 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  
+  img {
+    width: 200px
+  }
 `;
 
 export const FormWrapper = styled.div`
-  min-height: 730px;
   padding: 20px 25px;
   background-image: url('https://www.business.com/images/content/5fa/477b57b437400308b4569/1500-0-');
   background-position: center;

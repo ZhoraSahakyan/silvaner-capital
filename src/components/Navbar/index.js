@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
 import {IconContext} from 'react-icons/lib';
 import {animateScroll as scroll} from 'react-scroll';
+import Logo from '../../assets/images/Logo.png';
 import {
     MobileIcon,
     Nav,
@@ -39,7 +40,7 @@ const Navbar = ({toggle}) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo onClick={toggleHome} to='/'>
-                            Silvaner Capital
+                            <img src={Logo} alt="Silvaner Capital logo"/>
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars color='blue'/>
