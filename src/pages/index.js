@@ -3,14 +3,10 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
-import InfoSection from '../components/InfoSection';
-import {
-    homeObjOne,
-    homeObjTwo,
-    homeObjThree
-} from '../components/InfoSection/Data';
+import ProcessSection from '../components/ProcessSection';
 import Services from '../components/Services';
 import InvestmentFunction from '../components/InvestmentFocus';
+import AboutSection from "../components/AboutSection";
 
 
 function Home() {
@@ -25,9 +21,9 @@ function Home() {
             <Navbar toggle={toggle}/>
             <HeroSection/>
             <Services/>
-            {/*<InfoSection {...homeObjOne} />*/}
+            <ProcessSection />
             <InvestmentFunction/>
-            {/*<InfoSection {...homeObjThree} />*/}
+            <AboutSection/>
             <Footer/>
         </>
     );

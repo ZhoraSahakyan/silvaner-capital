@@ -48,9 +48,9 @@ const Navbar = ({toggle}) => {
                             <NavItem scrollNav={scrollNav}>
                                 <NavLinks
                                     to='services'
-                                    smooth={true}
+                                    smooth="true"
                                     duration={500}
-                                    spy={true}
+                                    spy="true"
                                     exact='true'
                                     offset={-80}
                                 >
@@ -61,9 +61,9 @@ const Navbar = ({toggle}) => {
                             <NavItem scrollNav={scrollNav}>
                                 <NavLinks
                                     to='about'
-                                    smooth={true}
+                                    smooth="true"
                                     duration={500}
-                                    spy={true}
+                                    spy="true"
                                     exact='true'
                                     offset={-80}
                                 >
@@ -74,9 +74,9 @@ const Navbar = ({toggle}) => {
                             <NavItem scrollNav={scrollNav}>
                                 <NavLinks
                                     to='investmentFocus'
-                                    smooth={true}
+                                    smooth="true"
                                     duration={500}
-                                    spy={true}
+                                    spy="true"
                                     exact='true'
                                     offset={-80}
                                 >
@@ -85,10 +85,10 @@ const Navbar = ({toggle}) => {
                             </NavItem>
                             <NavItem scrollNav={scrollNav}>
                                 <NavLinks
-                                    to='signup'
-                                    smooth={true}
+                                    to='process'
+                                    smooth="true"
                                     duration={500}
-                                    spy={true}
+                                    spy="true"
                                     exact='true'
                                     offset={-80}
                                 >
@@ -97,7 +97,14 @@ const Navbar = ({toggle}) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+                            <NavBtnLink to='contact'
+                                        smooth="true"
+                                        duration={500}
+                                        spy="true"
+                                        exact='true'
+                                        offset={-80}>
+                                Contact
+                            </NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
                 </Nav>

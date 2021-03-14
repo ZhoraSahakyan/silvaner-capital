@@ -9,7 +9,7 @@ import {
     ServicesH2,
     ServicesIcon,
     ServicesSubTitle,
-    ServicesP,
+    ServicesList,
     ServicesWrapper
 } from './InvestmentFocusElements';
 
@@ -22,7 +22,7 @@ const InvestmentFunction = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
                     <ServicesH2>Industry</ServicesH2>
-                    <ServicesP>
+                    <ServicesList>
                         <ul className="list-group">
                             <li className="list-group-item">B2B or B2C Services</li>
                             <li className="list-group-item">Healthcare</li>
@@ -30,12 +30,12 @@ const InvestmentFunction = () => {
                             <li className="list-group-item">Consumer Products</li>
                             <li className="list-group-item">Light Manufacturing</li>
                         </ul>
-                    </ServicesP>
+                    </ServicesList>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon2}/>
                     <ServicesH2>Financials</ServicesH2>
-                    <ServicesP>
+                    <ServicesList>
                         <ul className="list-group">
                             <li className="list-group-item">$3mm-$20mm Revenue</li>
                             <li className="list-group-item">Profitability (3+ years)</li>
@@ -43,19 +43,19 @@ const InvestmentFunction = () => {
                             <li className="list-group-item">Recurring customers</li>
                             <li className="list-group-item">Low capex</li>
                         </ul>
-                    </ServicesP>
+                    </ServicesList>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3}/>
                     <ServicesH2>Situation</ServicesH2>
-                    <ServicesP>
+                    <ServicesList>
                         <ul className="list-group">
                             <li className="list-group-item">Owner is looking to retire / transition from day-to-day
                                 operations
                             </li>
                             <li className="list-group-item">Owner is focused on preserving the legacy</li>
                         </ul>
-                    </ServicesP>
+                    </ServicesList>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

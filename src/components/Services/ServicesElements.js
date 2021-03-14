@@ -7,7 +7,6 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
 `;
 
 export const ServicesWrapper = styled.div`
@@ -63,7 +62,7 @@ export const ServicesH1 = styled.h1`
 `;
 
 export const ServicesH2 = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #000;
   margin-bottom: 10px;
   text-align: center;
