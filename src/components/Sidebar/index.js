@@ -40,7 +40,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             About
           </SidebarLink>
           <SidebarLink
-            to='discover'
+            to='investmentFocus'
             onClick={toggle}
             smooth={true}
             duration={500}

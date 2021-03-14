@@ -73,7 +73,7 @@ const Navbar = ({toggle}) => {
 
                             <NavItem scrollNav={scrollNav}>
                                 <NavLinks
-                                    to='discover'
+                                    to='investmentFocus'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
