@@ -1,38 +1,118 @@
 import React from 'react';
 import {
-  Container,
-  FormWrap,
-  Icon,
-  FormContent,
-  Form,
-  FormH1,
-  FormLabel,
-  FormInput,
-  FormButton,
-  Text
+    Container,
+    NavLogo,
+    FormWrapper,
+    FormContent,
+    FormHeader,
+    Form,
+    FormFieldContainer,
+    FormInput,
+    FormTextarea,
+    FormButton,
+    ContactInfo,
+    ContactInfoItem,
+    ContactInfoItemIcon
 } from './SigninElements';
+import {IconContext} from 'react-icons/lib';
+import {
+    FaPhoneAlt,
+    FaRegEnvelope,
+    FaMapMarkerAlt,
+    FaLinkedin
+} from 'react-icons/fa';
 
 const SignIn = () => {
-  return (
-    <>
-      <Container>
-        <FormWrap>
-          <Icon to='/'>Silvaner Capital</Icon>
-          <FormContent>
-            <Form action='#'>
-              <FormH1>Sign in to your account</FormH1>
-              <FormLabel htmlFor='for'>Email</FormLabel>
-              <FormInput type='email' required />
-              <FormLabel htmlFor='for'>Password</FormLabel>
-              <FormInput type='password' required />
-              <FormButton type='submit'>Continue</FormButton>
-              <Text>Forgot password</Text>
-            </Form>
-          </FormContent>
-        </FormWrap>
-      </Container>
-    </>
-  );
+    return (
+        <>
+            <Container>
+                <NavLogo to='/'>
+                    Silvaner Capital
+                </NavLogo>
+
+                <FormWrapper>
+                    <FormContent>
+                        <FormHeader>
+                            Contact <span>US</span>
+                        </FormHeader>
+
+                        <Form>
+                            <FormFieldContainer>
+                                <label htmlFor="name">Your Name (required)</label>
+                                <FormInput type="text" id="name">
+
+                                </FormInput>
+                            </FormFieldContainer>
+
+                            <FormFieldContainer>
+                                <label htmlFor="email">Your Email (required)</label>
+                                <FormInput type="email" id="email">
+
+                                </FormInput>
+                            </FormFieldContainer>
+
+                            <FormFieldContainer>
+                                <label htmlFor="subject">Subject</label>
+                                <FormInput type="text" id="subject">
+
+                                </FormInput>
+                            </FormFieldContainer>
+
+                            <FormFieldContainer>
+                                <label htmlFor="message">Message</label>
+                                <FormTextarea type="text" id="message">
+
+                                </FormTextarea>
+                            </FormFieldContainer>
+
+                            <FormFieldContainer>
+                                <FormButton>
+                                    Send
+                                </FormButton>
+                            </FormFieldContainer>
+                        </Form>
+
+                        <ContactInfo>
+                            <IconContext.Provider value={{color: '#fff'}}>
+                                <ContactInfoItem>
+                                    <ContactInfoItemIcon>
+                                        <FaPhoneAlt size={25}/>
+                                    </ContactInfoItemIcon>
+                                    <span>
+                                        +972-79-3700600
+                                    </span>
+                                </ContactInfoItem>
+                                <ContactInfoItem>
+                                    <ContactInfoItemIcon>
+                                        <FaRegEnvelope size={25}/>
+                                    </ContactInfoItemIcon>
+                                    <span>
+                                        office@grit-mind.com
+                                    </span>
+                                </ContactInfoItem>
+                                <ContactInfoItem>
+                                    <ContactInfoItemIcon>
+                                        <FaMapMarkerAlt size={25}/>
+                                    </ContactInfoItemIcon>
+                                    <span>
+                                        30 HaArba'a  ST, Tel-Aviv
+                                    </span>
+                                </ContactInfoItem>
+                                <ContactInfoItem>
+                                    <ContactInfoItemIcon>
+                                        <FaLinkedin size={25}/>
+                                    </ContactInfoItemIcon>
+                                    <span>
+                                        Grit Mind Partners
+                                    </span>
+                                </ContactInfoItem>
+                            </IconContext.Provider>
+                        </ContactInfo>
+                    </FormContent>
+                </FormWrapper>
+            </Container>
+        </>
+    );
 };
 
 export default SignIn;

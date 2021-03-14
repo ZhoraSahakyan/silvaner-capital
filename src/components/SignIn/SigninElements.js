@@ -1,51 +1,48 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import {Link as LinkR} from 'react-router-dom';
 
 export const Container = styled.div`
-  min-height: 692px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  overflow: hidden;
-  background: linear-gradient(
-    108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  );
+  display: grid;
+  grid-template-columns: .7fr 2.5fr .5fr;
+  align-items: start;
+  padding: 10px 24px;
+  grid-gap: 10px;
+  
+  
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
-export const FormWrap = styled.div`
-  height: 100%;
+export const NavLogo = styled(LinkR)`
+  color: blue;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media screen and (max-width: 400px) {
-    height: 80%;
-  }
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
 `;
 
-export const Icon = styled(Link)`
-  margin-left: 32px;
-  margin-top: 32px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 32px;
-
-  @media screen and (max-width: 480px) {
-    margin-left: 16px;
-    margin-top: 8px;
-  }
+export const FormWrapper = styled.div`
+  min-height: 730px;
+  padding: 20px 25px;
+  background-image: url('https://www.business.com/images/content/5fa/477b57b437400308b4569/1500-0-');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 export const FormContent = styled.div`
   height: 100%;
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, .3);
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 
   @media screen and (max-width: 480px) {
@@ -53,55 +50,99 @@ export const FormContent = styled.div`
   }
 `;
 
+export const FormHeader = styled.h1`
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    
+    span {
+        color: teal;
+    }
+    
+    :after {
+        content: '';
+        position: absolute;
+        top: 60px;
+        left: 70px;
+        height: 3px;
+        width: 145px;
+        background-color: #fff;
+     }
+`;
+
 export const Form = styled.form`
-  background: #010101;
-  max-width: 400px;
-  height: auto;
+  margin: 80px auto;
+  width: 70%;
+`;
+
+export const FormFieldContainer = styled.div`
   width: 100%;
-  z-index: 1;
-  display: grid;
-  margin: 0 auto;
-  padding: 80px 32px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
-  @media screen and (max-width: 400px) {
-    padding: 32px 32px;
-  }
-`;
-
-export const FormH1 = styled.h1`
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
   color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
+  margin-bottom: 20px;
 `;
 
-export const FormLabel = styled.label`
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #fff;
-`;
 export const FormInput = styled.input`
-  padding: 16px 16px;
-  margin-bottom: 32px;
-  border: none;
-  border-radius: 4px;
+  margin: 8px 0;
+  height: 30px;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 0 10px;
+  color: #fff;
+`;
+
+export const FormTextarea = styled.textarea`
+  margin: 8px 0;
+  min-height: 150px;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 5px 10px;
+  color: #fff;
+  resize: vertical;
 `;
 
 export const FormButton = styled.button`
-  background: #01bf71;
-  padding: 16px 0;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 20px;
+  margin: 8px 0;
+  width: 120px;
   cursor: pointer;
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 5px 10px;
+  color: #000;
+  resize: vertical;
 `;
-export const Text = styled.span`
-  text-align: center;
-  margin-top: 24px;
-  color: #fff;
-  font-size: 14px;
+
+export const ContactInfo = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+`;
+
+export const ContactInfoItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  span {
+    font-size: 12px;
+    color: #fff;
+  }
+`;
+
+export const ContactInfoItemIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .2);
+  margin-bottom: 10px;
 `;
