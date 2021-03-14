@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import wave from '../../assets/images/Graphics/wave.svg';
 
 export const AboutContainer = styled.div`
-  min-height: 780px;
+  min-height: 920px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -30,19 +30,13 @@ export const AboutSubTitle = styled.p`
 export const Partner = styled.div`
   margin: 0 auto;
   padding: 15px 15px;
-  display: grid;
+  display: flex;
   background: #fff;
   border-radius: 30px;
-  grid-template-columns: 2fr 2fr;
+  justify-content: space-between;
   align-items: start;
-  grid-gap: 50px;
-
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
-  }
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
     padding: 15px 20px;
   }
 `;
@@ -51,9 +45,10 @@ export const PartnerImages = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 50px;
     
     img {
-        width: 360px;
+        width: 500px;
     }
     
     img:nth-child(1) {

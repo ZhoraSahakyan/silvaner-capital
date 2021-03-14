@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import wave1 from '../../assets/images/Graphics/wave-3.svg'
 
 export const ServicesContainer = styled.div`
-  min-height: 1000px;
+  min-height: 780px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ export const ServicesSubTitle = styled.p`
   color: #000;
   margin-bottom: 10px;
   text-align: center;
-  max-width: 670px;
+  max-width: 900px;
   
 `;
 

@@ -29,6 +29,7 @@ export const ProcessSubTitle = styled.p`
 
 export const ProcessWrapper = styled.div`
   max-width: 800px; 
+  margin-top: 80px;
   display: grid;
   padding: 15px 0;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
