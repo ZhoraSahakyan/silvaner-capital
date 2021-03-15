@@ -65,12 +65,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='contact-us'
-                                  smooth="true"
-                                  duration={500}
-                                  spy="true"
-                                  exact='true'
-                                  offset={-80}>
+                    <SidebarRoute href="mailto:Johannes.hock@utexas.edu">
                         Contact
                     </SidebarRoute>
                 </SideBtnWrap>

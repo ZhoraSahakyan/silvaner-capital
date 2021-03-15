@@ -7,7 +7,6 @@ import ProcessSection from '../components/ProcessSection';
 import Services from '../components/Services';
 import InvestmentFunction from '../components/InvestmentFocus';
 import AboutSection from "../components/AboutSection";
-import Contact from "../components/Contact";
 
 
 function Home() {
@@ -25,8 +24,7 @@ function Home() {
             <AboutSection/>
             <InvestmentFunction/>
             <ProcessSection />
-            <Contact/>
-            <Footer/>
+            {/*<Footer/>*/}
         </>
     );
 }

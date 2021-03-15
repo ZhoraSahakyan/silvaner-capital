@@ -37,6 +37,8 @@ export const Partner = styled.div`
   align-items: start;
 
   @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
     padding: 15px 20px;
   }
 `;
@@ -48,7 +50,7 @@ export const PartnerImages = styled.div`
     margin-right: 50px;
     
     img {
-        width: 500px;
+        width: 350px;
     }
     
     img:nth-child(1) {

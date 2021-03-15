@@ -98,12 +98,7 @@ const Navbar = ({toggle}) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink to='contact-us'
-                                        smooth="true"
-                                        duration={500}
-                                        spy="true"
-                                        exact='true'
-                                        offset={-80}>
+                            <NavBtnLink href="mailto:Johannes.hock@utexas.edu">
                                 Contact Us
                             </NavBtnLink>
                         </NavBtn>

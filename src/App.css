@@ -5,3 +5,8 @@
   font-family: 'Encode Sans Expanded', sans-serif;
   letter-spacing: 1.5px;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
