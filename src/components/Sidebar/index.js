@@ -1,15 +1,14 @@
 import React from 'react';
 import {
-    SidebarContainer,
-    Icon,
     CloseIcon,
-    SidebarWrapper,
-    SidebarMenu,
+    Icon,
+    SidebarContainer,
     SidebarLink,
+    SidebarMenu,
     SidebarRoute,
+    SidebarWrapper,
     SideBtnWrap
 } from './SidebarElements';
-import {NavBtnLink} from "../Navbar/NavbarElements";
 
 const Sidebar = ({isOpen, toggle}) => {
     return (

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import wave from '../../assets/images/Graphics/wave.svg';
 
 export const AboutContainer = styled.div`
-  min-height: 920px;
+  min-height: 890px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -24,16 +24,16 @@ export const AboutSubTitle = styled.p`
   color: #000;
   margin-bottom: 10px;
   text-align: center;
-  max-width: 900px; 
+  max-width: 850px; 
 `;
 
 export const Partner = styled.div`
   margin: 0 auto;
-  padding: 15px 15px;
+  padding: 15px 0;
   display: flex;
   background: #fff;
   border-radius: 30px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: start;
 
   @media screen and (max-width: 768px) {

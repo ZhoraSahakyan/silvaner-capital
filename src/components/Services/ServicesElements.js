@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import wave1 from '../../assets/images/Graphics/wave-3.svg'
 
 export const ServicesContainer = styled.div`
-  min-height: 780px;
+  min-height: 890px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-image: url(${wave1});
   background-repeat: no-repeat;

@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import ProcessSection from '../components/ProcessSection';
 import Services from '../components/Services';
@@ -24,7 +23,6 @@ function Home() {
             <AboutSection/>
             <InvestmentFunction/>
             <ProcessSection />
-            {/*<Footer/>*/}
         </>
     );
 }

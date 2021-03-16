@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 import wave from '../../assets/images/Graphics/wave-4.svg'
-import {Link as LinkS} from "react-scroll/modules";
 
 export const ProcessContainer = styled.div`
-  min-height: 680px;
+  min-height: 890px;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
